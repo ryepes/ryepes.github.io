@@ -1,1 +1,22 @@
-theme: jekyll-theme-slate
+title: Robinson Yepes - Software Developer
+description: Personal portfolio and blog of a passionate software developer
+baseurl: ""
+url: "https://ryepes.github.io"
+
+# Social media usernames
+github_username: ryepes
+linkedin_username: ryepes
+twitter_username: rmyepes
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude files from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor

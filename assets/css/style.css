@@ -1,0 +1,148 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --text-color: #333;
+    --light-bg: #f5f6fa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+.site-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.site-header nav {
+    margin-top: 1rem;
+}
+
+.site-header nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.site-header nav a:hover {
+    color: var(--secondary-color);
+}
+
+/* Main Content Styles */
+.site-content {
+    margin-top: 80px;
+    padding: 2rem 0;
+}
+
+section {
+    padding: 4rem 0;
+}
+
+section:nth-child(even) {
+    background-color: var(--light-bg);
+}
+
+/* Footer Styles */
+.site-footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--secondary-color);
+}
+
+/* Section Styles */
+.hero {
+    text-align: center;
+    padding: 4rem 0;
+    background-color: var(--light-bg);
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .site-header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .site-header nav a {
+        margin: 0.5rem 0;
+    }
+}
